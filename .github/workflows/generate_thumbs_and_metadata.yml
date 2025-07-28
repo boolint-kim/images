@@ -1,5 +1,8 @@
 name: Generate thumbnails and metadata
 
+permissions:
+  contents: write
+  
 on:
   push:
     paths:
