@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pat_003",
+    "category": "pattern",
+    "thumbUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/thumbs/pat_003_thumb.jpg",
+    "fullUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/full/pat_003.png"
+  },
+  {
+    "id": "pat_002",
+    "category": "pattern",
+    "thumbUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/thumbs/pat_002_thumb.jpg",
+    "fullUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/full/pat_002.png"
+  },
+  {
+    "id": "pat_001",
+    "category": "pattern",
+    "thumbUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/thumbs/pat_001_thumb.jpg",
+    "fullUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/full/pat_001.png"
+  },
+  {
+    "id": "pat_004",
+    "category": "pattern",
+    "thumbUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/thumbs/pat_004_thumb.jpg",
+    "fullUrl": "https://raw.githubusercontent.com/boolint-kim/images/main/pattern/full/pat_004.png"
+  }
+]
