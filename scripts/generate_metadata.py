@@ -1,9 +1,9 @@
 import os, json
 from PIL import Image
 
-BASE_DIR = "images"
-METADATA_FILE = os.path.join(BASE_DIR, "metadata.json")
-BASE_URL = "https://raw.githubusercontent.com/boolint-kim/bitmap_images/main/images"
+BASE_DIR = "."  # 현재 디렉토리에서 시작
+METADATA_FILE = "metadata.json"
+BASE_URL = "https://raw.githubusercontent.com/boolint-kim/images/main"
 
 def generate_thumbnail(input_path, output_path, size=(200, 200)):
     img = Image.open(input_path)
