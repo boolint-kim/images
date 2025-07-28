@@ -3,7 +3,8 @@ name: Generate thumbnails and metadata
 on:
   push:
     paths:
-      - 'images/**'
+      - '**/full/**'    # 모든 category/full 내 이미지 파일
+      - 'scripts/**'    # 스크립트 수정 시에도 재실행
 
 jobs:
   build:
@@ -18,7 +19,7 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install dependencies
+    - name: Install Pillow
       run: pip install Pillow
 
     - name: Run metadata generator
@@ -28,6 +29,6 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add images/**/thumbs/* images/metadata.json
-        git commit -m "Auto: generate thumbs and metadata"
-        git push || echo "No changes to commit"
+        git add */thumbs/* metadata.json
+        git commit -m "Auto: generate thumbs and metadata" || echo "No changes to commit"
+        git push
