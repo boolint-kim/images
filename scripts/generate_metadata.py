@@ -8,6 +8,12 @@ BASE_URL = "https://raw.githubusercontent.com/boolint-kim/images/main"
 def generate_thumbnail(input_path, output_path, size=(200, 200)):
     img = Image.open(input_path)
     img.thumbnail(size)
+    if img.mode in ("RGBA", "LA"):
+        background = Image.new("RGB", img.size, (255, 255, 255))
+        background.paste(img, mask=img.split()[-1])
+        img = background
+    else:
+        img = img.convert("RGB")
     img.save(output_path, "JPEG")
 
 def main():
